@@ -12,12 +12,12 @@ struct NAV_PVT {
   unsigned char hour;          // Hour of day, range 0..23 (UTC)
   unsigned char minute;        // Minute of hour, range 0..59 (UTC)
   unsigned char second;        // Seconds of minute, range 0..60 (UTC)
-  unsigned char valid;                  // Validity Flags (see graphic below)
+  unsigned char valid;         // Validity Flags (see graphic below)
   unsigned long tAcc;          // Time accuracy estimate (UTC) (ns)
   long nano;                   // Fraction of second, range -1e9 .. 1e9 (UTC) (ns)
   unsigned char fixType;       // GNSSfix Type, range 0..5
-  unsigned char flags;                  // Fix Status Flags
-  unsigned char flags2;                 // Fix Status Flags
+  unsigned char flags;         // Fix Status Flags
+  unsigned char flags2;        // Fix Status Flags
   unsigned char numSV;         // Number of satellites used in Nav Solution
   
   long lon;                    // Longitude (deg)
